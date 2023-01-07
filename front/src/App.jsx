@@ -6,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-
+<button type="button" className={'btn btn-primary'}>Add product</button>
     </div>
   )
 }
