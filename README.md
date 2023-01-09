@@ -29,6 +29,15 @@ For the backend
   composer install
   php artisan serve 
 ```
+if you want to have some sample data run
+```bash
+    php artisan migrate
+    php artisan db:seed 
+```
+or
+```bash
+    php artisan migrate --seed
+```
 For the frontend
 ```bash
   cd front
