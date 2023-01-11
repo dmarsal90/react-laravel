@@ -31,8 +31,8 @@ const ShowProducts = () => {
           Create
         </Link>
       </div>
-      <table className={"table table-striped"}>
-        <thead>
+      <table className={"table table-striped table-bordered table-responsive-sm table-hover"}>
+        <thead class="table-dark">
           <tr>
             <th>Description</th>
             <th>Price</th>
@@ -58,6 +58,14 @@ const ShowProducts = () => {
             </tr>
           ))}
         </tbody>
+        <tfoot className="table-dark">
+        <tr>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Stock</th>
+          <th>Actions</th>
+        </tr>
+        </tfoot>
       </table>
     </div>
   );
