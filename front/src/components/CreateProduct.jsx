@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
-const endpoint = 'http://localhost:8000/api'
+const endpoint = 'http://localhost:8000/api/product'
 
 const CreateProduct = () => {
   return (
