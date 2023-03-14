@@ -1,7 +1,7 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import "./App.css";
-import Showproducts from "./components/Showproducts";
+import ShowProducts from "./components/Showproducts";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Showproducts/>}/>
+          <Route path='/' element={<ShowProducts/>}/>
         </Routes>
       </BrowserRouter>
       

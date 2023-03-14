@@ -2,17 +2,17 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
-const endpoint = "http://127.0.0.1:8000/api";
+const endpoint = "http://localhost:8000/api";
 
-const Showproducts = () => {
-  const [products, Setproducts] = useState([]);
+const ShowProducts = () => {
+  const [products, setProducts] = useState( [] );
   useEffect(() => {
     getAllProducts();
-  });
+  }, []);
 
   const getAllProducts = async () => {
-    const response = await axios.get(`$(endpoint)/products`);
-    Setproducts(response.data);
+    const response = await axios.get(`${endpoint}/products`);
+    setProducts(response.data);
   };
 
   const deleteProduct = async (id) => {
@@ -63,4 +63,4 @@ const Showproducts = () => {
   );
 };
 
-export default Showproducts;
+export default ShowProducts;
