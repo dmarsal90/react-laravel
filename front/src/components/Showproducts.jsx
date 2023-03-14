@@ -8,7 +8,10 @@ const Showproducts = () => {
     getAllProducts();
   });
 
-  const getAllProducts = () => {};
+  const getAllProducts = async () => {
+    const response= await axios.get(`$(endpoint)/products`)
+    Setproducts(response.data)
+  };
 
   const deleteProduct = () => {};
 
