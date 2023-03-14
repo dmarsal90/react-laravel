@@ -15,7 +15,10 @@ const Showproducts = () => {
     Setproducts(response.data);
   };
 
-  const deleteProduct = () => {};
+  const deleteProduct = async (id) => {
+    await axios.delete(`${endpoint}/product/${id}`);
+    getAllProducts();
+  };
 
   return (
     <div>
