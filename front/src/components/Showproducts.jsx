@@ -26,13 +26,13 @@ const ShowProducts = () => {
       <div className="d-grid gap-2">
         <Link
           to="/create"
-          className="btn btn-success btn-lg mt-2 mb-2 text-white "
+          className="btn btn-primary btn-lg mt-2 mb-2 text-white "
         >
           Create
         </Link>
       </div>
       <table className="table table-striped">
-        <thead className="bg-primary text-white">
+        <thead className="bg-black text-white">
           <tr>
             <th>Description</th>
             <th>Price</th>
@@ -46,7 +46,7 @@ const ShowProducts = () => {
               <td>{product.description}</td>
               <td>{product.price}</td>
               <td>{product.stock}</td>
-              <td>
+              <td className="mr-2">
                 <Link
                   to={`/edit/product/${product.id}`}
                   className="btn btn-warning"
