@@ -27,15 +27,15 @@ const CreateProduct = () => {
                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                            required/>
                 </div>
-                <div className="grid grid-cols-6 gap-4">
-                    <div className="mb-6 col-start-1 col-end-4">
+                <div className="grid grid-cols-6 gap-2">
+                    <div className="col-start-1 col-end-4">
                         <label htmlFor="price"
                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
                         <input value={price} onChange={(e)=>setPrice(e.target.value)} type="text" id="price"
                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                required/>
                     </div>
-                    <div className="mb-6 col-start-4 col-end-7">
+                    <div className="col-start-4 col-end-7">
                         <label htmlFor="stock"
                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Stock</label>
                         <input value={stock} onChange={(e)=>setStock(e.target.value)} type="number" id="stock"

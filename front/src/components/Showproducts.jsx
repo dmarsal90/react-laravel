@@ -75,7 +75,7 @@ const ShowProducts = () => {
                                         <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{product.description}</td>
                                         <td className="mb-2">{product.price}</td>
                                         <td className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">{product.stock}</td>
-                                        <td className="grid grid-cols-1 gap-1 mb-2">
+                                        <td className="grid grid-cols-1 gap-1">
                                             <Link to={`/edit/product/${product.id}`} className="col-start-1">
                                                 <svg
                                                     xmlns="http://www.w3.org/2000/svg"
