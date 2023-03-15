@@ -65,7 +65,7 @@ const CreateProduct = () => {
                     <span
                         className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56 opacity-5"></span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                         className="bi bi-plus" viewBox="0 0 16 16" id="IconChangeColor">
+                         className="bi bi-plus relative" viewBox="0 0 16 16" id="IconChangeColor">
                         <path
                             d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
                             id="mainIconPathAttribute"></path>
