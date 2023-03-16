@@ -12,11 +12,20 @@ const EditProduct = () => {
 
     const update = async (e) => {
         e.preventDefault()
-        await axios.put(`${endpoint}/${id}`,{
+        await axios.put(`${endpoint}/${id}`, {
             description: description, price: price, stock: stock
         })
         navigate('/')
     }
+    useEffect(() => {
+        const getProductById = async () => {
+            const response = await axios.get(`${endpoint}/${id}`)
+            setDescription(response.data.description)
+            setPrice(response.data.price)
+            setStock(response.data.stock)
+        }
+        getProductById()
+    }, [])
     return (
         <div>
             <h1>Edit Product</h1>
