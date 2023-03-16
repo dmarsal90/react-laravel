@@ -23,7 +23,8 @@ const CreateProduct = () => {
                 <div className="mb-6">
                     <label htmlFor="description"
                            className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Description</label>
-                    <input value={description} onChange={(e)=>setDescription(e.target.value)} type="text" id="description"
+                    <input value={description} onChange={(e) => setDescription(e.target.value)} type="text"
+                           id="description"
                            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                            required/>
                 </div>
@@ -31,20 +32,20 @@ const CreateProduct = () => {
                     <div className="col-start-1 col-end-4">
                         <label htmlFor="price"
                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Price</label>
-                        <input value={price} onChange={(e)=>setPrice(e.target.value)} type="text" id="price"
+                        <input value={price} onChange={(e) => setPrice(e.target.value)} type="text" id="price"
                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                required/>
                     </div>
                     <div className="col-start-4 col-end-7">
                         <label htmlFor="stock"
                                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Stock</label>
-                        <input value={stock} onChange={(e)=>setStock(e.target.value)} type="number" id="stock"
+                        <input value={stock} onChange={(e) => setStock(e.target.value)} type="number" id="stock"
                                className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light"
                                required/>
                     </div>
                 </div>
 
-
+                <br/>
                 <button type="submit"
                         className="relative inline-flex items-center justify-center px-6 py-3 overflow-hidden font-bold text-white rounded-md shadow-2xl group">
                     <span
