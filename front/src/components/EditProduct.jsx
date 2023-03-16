@@ -10,8 +10,12 @@ const EditProduct = () => {
     const navigate = useNavigate()
     const {id} = useParams()
 
-    const update = (e) => {
-
+    const update = async (e) => {
+        e.preventDefault()
+        await axios.put(`${endpoint}/${id}`,{
+            description: description, price: price, stock: stock
+        })
+        navigate('/')
     }
     return (
         <div>
