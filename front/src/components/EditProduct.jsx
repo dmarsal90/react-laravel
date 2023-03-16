@@ -9,6 +9,10 @@ const EditProduct = () => {
     const [stock, setStock] = useState(0)
     const navigate = useNavigate()
     const {id} = useParams()
+
+    const update = (e) => {
+
+    }
     return (
         <div>
             <h1>Edit Product</h1>
